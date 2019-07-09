@@ -1,0 +1,142 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
+    grid-template-rows: 10vh 10vh 70vh 10vh;
+    min-height: 100%;
+    min-width: 100%;
+    grid-auto-flow: row;
+
+}
+
+.header {
+    grid-column: 1/span 8;
+    background: brown;
+    border: solid white 2px;
+}
+
+.mapLeft{
+    grid-column: 1;
+    grid-row: 3/span 2;
+    background: saddlebrown;
+}
+
+.mapRight{
+    grid-column: 4;
+    grid-row: 3/span 2;
+    background: saddlebrown;
+}
+
+.mapTop{
+    grid-column: 1/ span 4;
+    grid-row: 2;
+    background: saddlebrown;
+}
+
+.mapBottom{
+    grid-column: 1/span 4;
+    grid-row: 4;
+    background: saddlebrown;
+}
+
+.optionsTop{
+    grid-column: 6/span 2;
+    grid-row: 2/3;
+    background: sandybrown;
+}
+
+.optionsLeft{
+    grid-column: 5;
+    grid-row: 2/4;
+    background: sandybrown;
+}
+
+.optionsRight{
+    grid-column: 8;
+    grid-row: 2/4;
+    background: sandybrown;
+}
+
+.optionsBottom{
+    grid-column: 5/ span 4;
+    grid-row: 4;
+    background: sandybrown;
+}
+
+.maparea {
+
+    grid-area: left;
+    background: saddlebrown;
+
+}
+
+.canvas {
+    grid-row: 3;
+    grid-column: 2/span 2;
+    border: solid black 2px;
+    background: dimgrey;
+}
+
+.options{
+    grid-row: 3;
+    grid-column: 6/span 2;
+    background: dimgrey;
+    border: solid black 2px;
+}
+
+
+
+body {
+    font-family: Arial;
+    color: white;
+}
+
+.title {
+    background: brown;
+    height: 10%;
+    alignment: center;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: saddlebrown;
+}
+
+.right {
+    right: 0;
+    background-color: sandybrown;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.main-wrapper {
+    width: 512px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0 auto;
+}
