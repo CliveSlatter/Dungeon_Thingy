@@ -115,8 +115,9 @@ Game.render = function () {};
 //
 
 window.onload = function () {
-    alert("Running")
-    let context = document.getElementById('map').getContext('2d');
+    let canvas = document.getElementById('map');
+    let context = canvas.getContext('2d');
+    alert(canvas.width+" "+canvas.height);
     Game.run(context);
 };
 
@@ -147,8 +148,6 @@ function Camera(map, width, height) {
     this.height = height;
     this.maxX = map.cols * map.tsize - width;
     this.maxY = map.rows * map.tsize - height;
-
-    alert("height: " + this.height + "width: " + this.width + "maxX: " + this.maxX + "maxY " + this.maxY);
 }
 
 Camera.SPEED = 512; // pixels per second
